@@ -1,0 +1,19 @@
+You are provided with 5 months of behavioral and transactional data for telecom users, including information related to BNPL (Buy Now, Pay Later) usage.
+You are acting as the Customer Value Analysis Manager in a telecom operator. Your objective is to analyze the effectiveness of BNPL (Buy Now, Pay Later) offerings and their impact on key business KPIs.
+Part 1 – Analysis & Insight Generation:
+BNPL effectiveness:
+•	What is the relationship between BNPL usage and other features?
+•	For users who used BNPL, how does their revenue evolve over time compared to those who did not?
+Part 2 - Planning & Recommendation
+•	Suggest ways to improve BNPL profitability and reduce defaults.
+•	Propose CVM campaigns based on ARPU and channel behavior.
+•	Suggest how CVM activities (e.g., offers or channel strategy) should be adjusted for different user groups.
+•	Mention key KPIs you would monitor to evaluate the success of your campaign.
+Part 3 - BNPL Default Prediction:
+•	Develop a model to predict the likelihood of BNPL default.
+•	Explain your modeling approach and rationale for selected features.
+
+Please submit:
+•	A presentation (max 10 slides) summarizing your analysis, findings, and recommendations.
+•	Your working file or notebook (Excel, Python, R, etc.)---optional but nice to have.
+Note: Avoid generic reporting. Focus on insights, patterns, and strategies that demonstrate your ability to bridge analytics with business impact.
