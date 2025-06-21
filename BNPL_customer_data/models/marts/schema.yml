@@ -1,0 +1,16 @@
+# version: 2
+
+# models:
+#   - name: mart_avg_delivery_time
+#     description: >
+#       Contains the average delivery time (in days) for all shipped and delivered orders.
+#     columns:
+#       - name: avg_delivery_days
+#         description: Average number of days taken to deliver an order.
+
+#   - name: mart_fulfillment_efficiency
+#     description: >
+#       An alternate view of fulfillment performance measuring delivery efficiency.
+#     columns:
+#       - name: avg_delivery_days
+#         description: Average number of days between shipment and delivery.

@@ -19,6 +19,7 @@ Part 3 - BNPL Default Prediction:
 Please submit:
 - A presentation (max 10 slides) summarizing your analysis, findings, and recommendations.
 - Your working file or notebook (Excel, Python, R, etc.)---optional but nice to have.
+
 Note: Avoid generic reporting. Focus on insights, patterns, and strategies that demonstrate your ability to bridge analytics with business impact.
 
 --------------------------------------------------

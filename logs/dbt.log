@@ -1,0 +1,61 @@
+[0m14:53:17.191598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10886b9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108599090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088db4d0>]}
+
+
+============================== 14:53:17.196027 | 328578a8-0132-4623-b6b1-98db4cb98377 ==============================
+[0m14:53:17.196027 [info ] [MainThread]: Running with dbt=1.9.4
+[0m14:53:17.196357 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/koosha/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt init BNPL_customer_data', 'send_anonymous_usage_stats': 'True'}
+[0m14:53:17.206530 [debug] [MainThread]: Starter project path: /Users/koosha/.local/pipx/venvs/dbt-duckdb/lib/python3.11/site-packages/dbt/include/starter_project
+[0m14:53:17.210233 [info ] [MainThread]: 
+Your new dbt project "BNPL_customer_data" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:53:17.210451 [info ] [MainThread]: Setting up your profile.
+[0m14:53:27.580586 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 10.421026, "process_in_blocks": "0", "process_kernel_time": 0.143962, "process_mem_max_rss": "109969408", "process_out_blocks": "0", "process_user_time": 0.590773}
+[0m14:53:27.580979 [debug] [MainThread]: Command `dbt init` succeeded at 14:53:27.580898 after 10.42 seconds
+[0m14:53:27.581224 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088db4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088baed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10885fb10>]}
+[0m14:53:27.581465 [debug] [MainThread]: Flushing usage events
+[0m14:53:33.043823 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:56:55.249324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a6e7dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a757210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a757910>]}
+
+
+============================== 14:56:55.251964 | 7018562d-d395-4031-ad52-269b93d859de ==============================
+[0m14:56:55.251964 [info ] [MainThread]: Running with dbt=1.9.4
+[0m14:56:55.252261 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/koosha/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt seed', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:56:55.252553 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/koosha/00-My Files-00/My Works/GitHub/Repositories/BNPL_Customer_Data/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:56:55.254089 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 0.03466925, "process_in_blocks": "0", "process_kernel_time": 0.108676, "process_mem_max_rss": "103071744", "process_out_blocks": "0", "process_user_time": 0.521662}
+[0m14:56:55.254307 [debug] [MainThread]: Command `dbt seed` failed at 14:56:55.254262 after 0.03 seconds
+[0m14:56:55.254485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a6dac90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a7341d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a7574d0>]}
+[0m14:56:55.254642 [debug] [MainThread]: Flushing usage events
+[0m14:57:05.794541 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:57:28.531321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c3be90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108cab290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108cab990>]}
+
+
+============================== 14:57:28.533897 | 66b0f3ab-72b7-4673-b360-383ea6a0d3bf ==============================
+[0m14:57:28.533897 [info ] [MainThread]: Running with dbt=1.9.4
+[0m14:57:28.534194 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/koosha/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt seed', 'send_anonymous_usage_stats': 'True'}
+[0m14:57:28.534476 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/koosha/00-My Files-00/My Works/GitHub/Repositories/BNPL_Customer_Data/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:57:28.535930 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 0.03383383, "process_in_blocks": "0", "process_kernel_time": 0.078116, "process_mem_max_rss": "104448000", "process_out_blocks": "0", "process_user_time": 0.523335}
+[0m14:57:28.536195 [debug] [MainThread]: Command `dbt seed` failed at 14:57:28.536146 after 0.03 seconds
+[0m14:57:28.536387 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108cad8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108caff50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c2f150>]}
+[0m14:57:28.536559 [debug] [MainThread]: Flushing usage events
+[0m14:57:38.889976 [debug] [MainThread]: An error was encountered while trying to flush usage events
