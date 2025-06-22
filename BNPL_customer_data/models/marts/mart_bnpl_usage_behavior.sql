@@ -5,5 +5,5 @@ select
   avg(direct_channel_usage_share) as avg_direct_channel,
   avg(bundle_purchase_count) as avg_bundle_count,
   count(*) as total_months
-from {{ ref('stg_BNPL_customer') }}
+from stg_BNPL_customer
 group by user_id

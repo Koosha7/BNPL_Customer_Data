@@ -8,5 +8,5 @@ select
     when avg(bundle_purchase_count) between 1 and 2 then 'Moderate'
     else 'Low'
   end as bundle_segment
-from {{ ref('stg_BNPL_customer') }}
+from stg_BNPL_customer
 group by user_id

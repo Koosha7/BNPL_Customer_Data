@@ -6,5 +6,5 @@ select
     when avg(direct_channel_usage_share) >= 40 then 'Medium'
     else 'Low'
   end as digital_channel_segment
-from {{ ref('stg_BNPL_customer') }}
+from stg_BNPL_customer
 group by user_id
