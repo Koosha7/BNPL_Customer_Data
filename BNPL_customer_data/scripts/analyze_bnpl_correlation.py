@@ -3,15 +3,13 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# Connect to your DuckDB DB file
-# Make sure path is correct — change if your DB has a different name
 con = duckdb.connect("/Users/koosha/00-My Files-00/My Works/GitHub/Repositories/BNPL_Customer_Data/BNPL_customer_data/dev.duckdb", read_only=True)
 
 # Read from staging model
 query = "SELECT * FROM stg_BNPL_customer"
 df = con.execute(query).fetchdf()
 
-# Preprocessing: drop categorical column or encode it
+# Preprocessing: drop categorical column / encode it
 if 'app_version' in df.columns:
     df['app_version'] = df['app_version'].astype(str)
     df['app_version_encoded'] = df['app_version'].astype('category').cat.codes
@@ -20,7 +18,7 @@ if 'app_version' in df.columns:
 # Compute correlation matrix
 correlation = df.corr(numeric_only=True)
 
-# Save correlation matrix as CSV (optional)
+# Save correlation matrix as CSV
 correlation.to_csv("/Users/koosha/00-My Files-00/My Works/GitHub/Repositories/BNPL_Customer_Data/BNPL_customer_data/results/correlation_matrix.csv")
 
 # Visualize correlation matrix

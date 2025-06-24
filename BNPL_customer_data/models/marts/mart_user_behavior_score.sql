@@ -12,5 +12,5 @@ select
     0.2 * avg(recent_recharge_freq) / 5 +
     0.2 * avg(bundle_purchase_count) / 5, 2
   ) as behavior_score
-from {{ ref('stg_BNPL_customer') }}
+from stg_BNPL_customer
 group by user_id
